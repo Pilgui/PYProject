@@ -3,22 +3,22 @@ score = 0
 questionNum = 1
 grid_cells = []
 questions = [
-    ("Name of the biggest ocean:", "Pacific"),
-    ("Capital of France:", "Paris"),
-    ("Fastest land animal:", "Cheetah"),
-    ("Largest planet:", "Jupiter"),
-    ("Color of the sky:", "Blue"),
-    ("Longest river:", "Nile"),
-    ("Hardest mineral:", "Diamond"),
-    ("Largest mammal:", "Bluewhale"),
-    ("Smallest continent:", "Australia")
+    ("1. Name of the biggest ocean:", "Pacific"),
+    ("2. Capital of France:", "Paris"),
+    ("3. Fastest land animal:", "Cheetah"),
+    ("4. Largest planet:", "Jupiter"),
+    ("5. Color of the sky:", "Blue"),
+    ("6. Longest river:", "Nile"),
+    ("7. Hardest mineral:", "Diamond"),
+    ("8. Largest mammal:", "Bluewhale"),
+    ("9. Smallest continent:", "Australia")
 ]
 
-def startTimedGame():
+def startTimedGame(size):
 
     window = tk.Tk()
     window.title("Gra na czas")
-    window.geometry("500x500")
+    window.geometry(f"{size}x{size}")
     window.configure(background="#C3C7F4")
     window.resizable(False, False)
 
@@ -80,4 +80,4 @@ def startTimedGame():
 
     window.mainloop()
 
-startTimedGame()
+# startTimedGame()

@@ -1,14 +1,19 @@
 import tkinter as tk
-from tkinter import ttk
 
-import TimeGame
+from GUI import TimeGame
+import SettingsWindow
+from GUI.SettingsWindow import windowSetup
+from utils.Properties import Properties
+
+properties = Properties()
+main_size = properties.get("window-size")
 
 
-def gameTypeMenu():
+def gameTypeMenu(size):
     window = tk.Tk()
     window.title("Game Type")
     window.resizable(False, False)
-    window.geometry("500x500")
+    window.geometry(f"{size}x{size}")
     window.config(bg="#F2DDDC")
 
     for i in range(5):
@@ -18,16 +23,14 @@ def gameTypeMenu():
 
     def startTimedGame():
         window.destroy()
-        TimeGame.startTimedGame()
+        TimeGame.startTimedGame(size)
     startTimeGameButton = tk.Button(window,text="Gra na czas", background="#C3C7F4", width=25, font=("Arial", 14), relief="groove",command=startTimedGame)
 
     startFailGameButton = tk.Button(window,text="Gra do pierwszego błędu", background="#C3C7F4",width=25, font=("Arial", 14), relief="groove")
 
-
-
     def backButtonClick():
         window.destroy()
-        gameMenu()
+        mainMenu()
     backButton = tk.Button(window, text="Powrót", command=backButtonClick, background="#C3C7F4", width=10, font=("Arial", 16), relief="groove")
 
     gameTypeLabel.grid(row=0, column=0, columnspan=5, pady=80,sticky="ew")
@@ -38,13 +41,15 @@ def gameTypeMenu():
     window.mainloop()
 
 
-def gameMenu():
+def mainMenu(size):
     menuWindow = tk.Tk()
-    menuWindow.geometry("500x500")
+    menuWindow.geometry(f"{size}x{size}")
     menuWindow.resizable(False, False)
     menuWindow.title("Krzyżówka")
     menuWindow.config(bg="#F2DDDC")
+    main_size = size
 
+    print(main_size)
 
     for i in range(5):
         menuWindow.grid_columnconfigure(i, weight=1)
@@ -58,15 +63,21 @@ def gameMenu():
 
     def buttonStart():
         menuWindow.destroy()
-        gameTypeMenu()
+        gameTypeMenu(size)
+
+    def settingsMenu():
+        menuWindow.destroy()
+        windowSetup()
 
     menuButtonStart = tk.Button(menuWindow, text="Start", command=buttonStart, background="#C3C7F4", width=10, font=("Arial", 16), relief="groove")
     menuButtonQuit = tk.Button(menuWindow, text="Quit", command=buttonQuit, background="#C3C7F4", width=10, font=("Arial", 16), relief="groove")
+    menuSettingsMenu = tk.Button(menuWindow, text="Settings", command=settingsMenu, background="#C3C7F4", width=10, font=("Arial", 16), relief="groove")
 
     menuButtonStart.grid(row=3, column=2,pady=50)
     menuButtonQuit.grid(row=4, column=2)
+    menuSettingsMenu.grid(row=5, column=2, pady=50)
 
     menuWindow.mainloop()
 
-
-gameMenu()
+if(__name__ == "__main__"):
+    mainMenu(main_size)
