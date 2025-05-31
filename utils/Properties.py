@@ -4,10 +4,13 @@ import os
 class Properties:
     def __init__(self, filename='properties.json'):
         base_dir = os.path.dirname(os.path.abspath(__file__))
+        data_dir = os.path.join(base_dir, 'data')
 
-        self.filename = os.path.join(base_dir, filename)
+        self.filename = os.path.join(data_dir, filename)
         self.data = {
-            "window-size": 500
+            "window-size": 500,
+            "level": 1,
+            "theme": "Geography"
         }
         print('start')
         self.load()
@@ -25,6 +28,7 @@ class Properties:
 
     def get(self, key):
         return self.data.get(key)
+
 
     def set(self, key, value):
         self.data[key] = value

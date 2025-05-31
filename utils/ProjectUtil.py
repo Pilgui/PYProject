@@ -1,6 +1,7 @@
 from json import load
 from json import dump
 
+from utils.Properties import Properties
 from utils.QuestionsLoader import QuestionsLoader
 
 
@@ -14,9 +15,13 @@ class ProjectUtil:
 
     @staticmethod
     def getSavedOptions():
-        # nie jestem pewny wyniku, jeśli niema pliku...
-        with open('options.json', 'r') as options:
-            return load(options)
+        properties = Properties()
+        options = {
+            "window-size": properties.get(key="window-size"),
+            "level": properties.get(key="level"),
+            "theme": properties.get(key="theme")
+                   }
+        return options
 
     @staticmethod
     def saveOptions(optionsToSave):
