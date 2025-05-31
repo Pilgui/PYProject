@@ -2,7 +2,6 @@ import tkinter as tk
 
 
 import GUI.startMenu as startMenu
-from auth.registration import Person
 from utils.Properties import Properties
 from DB.DAO import userDao as DAO
 

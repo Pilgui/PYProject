@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eea3df8a-e845-4cdc-9fc1-eb92c4356008" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI/TimeGame.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/TimeGame.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/QuestionsLoader.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/QuestionsLoader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DB/DAO/userDao.py" beforeDir="false" afterPath="$PROJECT_DIR$/DB/DAO/userDao.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +114,7 @@
       <workItem from="1746507293606" duration="1131000" />
       <workItem from="1748429456356" duration="232000" />
       <workItem from="1748706265491" duration="14246000" />
-      <workItem from="1748724323101" duration="8103000" />
+      <workItem from="1748724323101" duration="8430000" />
     </task>
     <servers />
   </component>
@@ -138,7 +136,7 @@
     <SUITE FILE_PATH="coverage/PyProject$ResultsWindow.coverage" NAME="ResultsWindow Coverage Results" MODIFIED="1748713371040" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/GUI" />
     <SUITE FILE_PATH="coverage/PyProject$SettingsWindow.coverage" NAME="SettingsWindow Coverage Results" MODIFIED="1748709330158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/GUI" />
     <SUITE FILE_PATH="coverage/PyProject$test.coverage" NAME="test Coverage Results" MODIFIED="1748429632271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PyProject$Run_with_Poetry.coverage" NAME="Run with Poetry Coverage Results" MODIFIED="1748729971935" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/PyProject$Run_with_Poetry.coverage" NAME="Run with Poetry Coverage Results" MODIFIED="1748732811178" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/PyProject$TimeGame.coverage" NAME="TimeGame Coverage Results" MODIFIED="1748732441178" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/GUI" />
     <SUITE FILE_PATH="coverage/PyProject$database.coverage" NAME="database Coverage Results" MODIFIED="1748714086456" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DB" />
     <SUITE FILE_PATH="coverage/PyProject$main.coverage" NAME="main Coverage Results" MODIFIED="1748713501663" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/GUI" />
