@@ -1,18 +1,11 @@
 import tkinter as tk
+
+from game.QuestionOrganizer import QuestionOrganizer
+
 score = 0
 questionNum = 1
 grid_cells = []
-questions = [
-    ("1. Name of the biggest ocean:", "Pacific"),
-    ("2. Capital of France:", "Paris"),
-    ("3. Fastest land animal:", "Cheetah"),
-    ("4. Largest planet:", "Jupiter"),
-    ("5. Color of the sky:", "Blue"),
-    ("6. Longest river:", "Nile"),
-    ("7. Hardest mineral:", "Diamond"),
-    ("8. Largest mammal:", "Bluewhale"),
-    ("9. Smallest continent:", "Australia")
-]
+questions = QuestionOrganizer.getQuestions()
 
 def startTimedGame(size):
 
@@ -80,4 +73,4 @@ def startTimedGame(size):
 
     window.mainloop()
 
-# startTimedGame()
+# startTimedGame(size=800)

@@ -1,11 +1,15 @@
 import json
+import os
 
 from utils.Question import Question
 
 
 class QuestionsLoader(object):
     def __init__(self, filePath: str):
-        self.filePath = filePath
+        base_dir = os.path.dirname(os.path.abspath(__file__))
+        data_dir = os.path.join(base_dir, 'data')
+
+        self.filePath = os.path.join(data_dir, filePath)
         self.questions = self.loadFile()
 
     def loadFile(self) -> list[Question]:
