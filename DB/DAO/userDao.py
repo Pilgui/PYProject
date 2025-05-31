@@ -1,15 +1,18 @@
 from DB.database import SessionLocal
 from DB.model.User import User
+import bcrypt
 
 class UserDAO:
     def __init__(self):
         self.session = SessionLocal()
 
 
-    def create(self, id: int, name: str, login: str, password: str) -> bool:
-        user = User(id, name, login, password)
-        self.session.add(user)
+    def create(self, name: str, login: str, password: str) -> bool:
         try:
+            hashedPassword = bcrypt.hashpw(password.encode("utf-8"), bcrypt.gensalt()).decode("utf-8")
+
+            user = User(username=name, login=login, password=hashedPassword)
+            self.session.add(user)
             self.session.commit()
             return True
         except Exception as e:

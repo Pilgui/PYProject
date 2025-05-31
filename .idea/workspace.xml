@@ -6,9 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="eea3df8a-e845-4cdc-9fc1-eb92c4356008" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI/ResultsWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/ResultsWindow.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI/SettingsWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/SettingsWindow.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DB/DAO/userDao.py" beforeDir="false" afterPath="$PROJECT_DIR$/DB/DAO/userDao.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DB/model/User.py" beforeDir="false" afterPath="$PROJECT_DIR$/DB/model/User.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/AuthorizationWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/AuthorizationWindow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-db.py" beforeDir="false" afterPath="$PROJECT_DIR$/test-db.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,27 +40,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.ResultsWindow.executor": "Run",
-    "Python.Run with Poetry.executor": "Run",
-    "Python.SettingsWindow.executor": "Run",
-    "Python.TimeGame.executor": "Run",
-    "Python.database.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.test.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/pilgu/OneDrive/Desktop/PyProject/utils",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.ResultsWindow.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Run with Poetry.executor&quot;: &quot;Run&quot;,
+    &quot;Python.SettingsWindow.executor&quot;: &quot;Run&quot;,
+    &quot;Python.TimeGame.executor&quot;: &quot;Run&quot;,
+    &quot;Python.database.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/pilgu/OneDrive/Desktop/PyProject/utils&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\pilgu\OneDrive\Desktop\PyProject\utils" />
@@ -115,18 +119,30 @@
       <workItem from="1746469677676" duration="9209000" />
       <workItem from="1746507293606" duration="1131000" />
       <workItem from="1748429456356" duration="232000" />
-      <workItem from="1748706265491" duration="13883000" />
+      <workItem from="1748706265491" duration="14246000" />
+      <workItem from="1748724323101" duration="1404000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PyProject$ResultsWindow.coverage" NAME="ResultsWindow Coverage Results" MODIFIED="1748713371040" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/GUI" />
     <SUITE FILE_PATH="coverage/PyProject$SettingsWindow.coverage" NAME="SettingsWindow Coverage Results" MODIFIED="1748709330158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/GUI" />
     <SUITE FILE_PATH="coverage/PyProject$test.coverage" NAME="test Coverage Results" MODIFIED="1748429632271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PyProject$Run_with_Poetry.coverage" NAME="Run with Poetry Coverage Results" MODIFIED="1748723951977" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/PyProject$Run_with_Poetry.coverage" NAME="Run with Poetry Coverage Results" MODIFIED="1748725601925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/PyProject$TimeGame.coverage" NAME="TimeGame Coverage Results" MODIFIED="1748706836293" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/GUI" />
     <SUITE FILE_PATH="coverage/PyProject$database.coverage" NAME="database Coverage Results" MODIFIED="1748714086456" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DB" />
     <SUITE FILE_PATH="coverage/PyProject$main.coverage" NAME="main Coverage Results" MODIFIED="1748713501663" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/GUI" />
