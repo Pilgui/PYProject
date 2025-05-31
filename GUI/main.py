@@ -1,6 +1,6 @@
 import tkinter as tk
 
-from GUI import TimeGame
+from GUI import TimeGame, ResultsWindow
 import SettingsWindow
 from GUI.SettingsWindow import windowSetup
 from utils.Properties import Properties
@@ -30,8 +30,9 @@ def gameTypeMenu(size):
 
     def backButtonClick():
         window.destroy()
-        mainMenu()
-    backButton = tk.Button(window, text="Powrót", command=backButtonClick, background="#C3C7F4", width=10, font=("Arial", 16), relief="groove")
+        mainMenu(size)
+
+    backButton = tk.Button(window, text="Back", command=backButtonClick, background="#C3C7F4", width=10, font=("Arial", 16), relief="groove")
 
     gameTypeLabel.grid(row=0, column=0, columnspan=5, pady=80,sticky="ew")
     startTimeGameButton.grid(row=1, column=1, pady=10, padx=10)
@@ -67,15 +68,23 @@ def mainMenu(size):
 
     def settingsMenu():
         menuWindow.destroy()
-        windowSetup()
+        SettingsWindow.windowSetup()
+
+    def buttonResults():
+        menuWindow.destroy()
+        ResultsWindow.windowSetup()
+
 
     menuButtonStart = tk.Button(menuWindow, text="Start", command=buttonStart, background="#C3C7F4", width=10, font=("Arial", 16), relief="groove")
     menuButtonQuit = tk.Button(menuWindow, text="Quit", command=buttonQuit, background="#C3C7F4", width=10, font=("Arial", 16), relief="groove")
     menuSettingsMenu = tk.Button(menuWindow, text="Settings", command=settingsMenu, background="#C3C7F4", width=10, font=("Arial", 16), relief="groove")
+    menuButtonResults = tk.Button(menuWindow, text="Results", command=buttonResults, background="#C3C7F4", width=10, font=("Arial", 16), relief="groove")
 
     menuButtonStart.grid(row=3, column=2,pady=50)
-    menuButtonQuit.grid(row=4, column=2)
+    menuButtonResults.grid(row=4, column=2)
     menuSettingsMenu.grid(row=5, column=2, pady=50)
+    menuButtonQuit.grid(row=6, column=2)
+
 
     menuWindow.mainloop()
 
