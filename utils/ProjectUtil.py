@@ -1,13 +1,16 @@
 from json import load
 from json import dump
 
+from utils.QuestionsLoader import QuestionsLoader
+
+
 class ProjectUtil:
 
     @staticmethod
     def getQuestions():
-        # nie jestem pewny wyniku, jeśli niema pliku...
-        with open('questions.json', 'r') as questions:
-            return load(questions)
+        questionLoader = QuestionsLoader("questions.json")
+        questions = questionLoader.get_all_questions()
+        return questions
 
     @staticmethod
     def getSavedOptions():

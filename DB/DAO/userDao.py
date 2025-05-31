@@ -2,6 +2,9 @@ from DB.database import SessionLocal
 from DB.model.User import User
 import bcrypt
 
+from auth.registration import Person
+
+
 class UserDAO:
     def __init__(self):
         self.session = SessionLocal()
@@ -14,6 +17,8 @@ class UserDAO:
             user = User(username=name, login=login, password=hashedPassword)
             self.session.add(user)
             self.session.commit()
+
+            person = Person(nickname=name, password=hashedPassword)
             return True
         except Exception as e:
             self.session.rollback()
@@ -36,3 +41,6 @@ class UserDAO:
 
     def close(self):
         self.session.close()
+
+    # def check_password(input_password: str, hashed_password_from_db: str) -> bool:
+    #     return bcrypt.checkpw(input_password.encode('utf-8'), hashed_password_from_db.encode('utf-8'))

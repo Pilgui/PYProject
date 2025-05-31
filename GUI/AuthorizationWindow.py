@@ -2,6 +2,7 @@ import tkinter as tk
 
 
 import GUI.startMenu as startMenu
+from auth.registration import Person
 from utils.Properties import Properties
 from DB.DAO import userDao as DAO
 
@@ -48,6 +49,7 @@ class AuthorizationWindow:
         def registerUser():
             dao = DAO.UserDAO()
             dao.create(nameEntry.get(), loginEntry.get(), passwordEntry.get())
+
 
         registerButton = tk.Button(window, text="Register",command=registerUser, background="#C3C7F4", width=10, font=("Arial", 16), relief="groove")
         registerButton.grid(row=5, column=2, pady=20)

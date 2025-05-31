@@ -107,3 +107,12 @@ def demo_widgets():
 
 
 demo_widgets()
+
+#
+# import json
+# from Question import Question
+#
+# with open("questions.json", "r", encoding="utf-8") as file:
+#     raw_data = json.load(file)
+#
+# questions = [Question(**item) for item in raw_data]

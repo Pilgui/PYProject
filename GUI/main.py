@@ -45,7 +45,5 @@ def gameTypeMenu(size):
     window.mainloop()
 
 
-
-
 if(__name__ == "__main__"):
     mainMenu(main_size)

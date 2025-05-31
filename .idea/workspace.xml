@@ -7,12 +7,11 @@
     <list default="true" id="eea3df8a-e845-4cdc-9fc1-eb92c4356008" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DB/DAO/userDao.py" beforeDir="false" afterPath="$PROJECT_DIR$/DB/DAO/userDao.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DB/model/User.py" beforeDir="false" afterPath="$PROJECT_DIR$/DB/model/User.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GUI/AuthorizationWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/AuthorizationWindow.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-db.py" beforeDir="false" afterPath="$PROJECT_DIR$/test-db.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/ProjectUtil.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/ProjectUtil.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/properties.json" beforeDir="false" afterPath="$PROJECT_DIR$/utils/data/properties.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,11 +66,11 @@
       <recent name="C:\Users\pilgu\OneDrive\Desktop\PyProject\DB" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\pilgu\OneDrive\Desktop\PyProject\utils\data" />
       <recent name="C:\Users\pilgu\OneDrive\Desktop\PyProject\DB\model" />
       <recent name="C:\Users\pilgu\OneDrive\Desktop\PyProject\utils" />
       <recent name="C:\Users\pilgu\OneDrive\Desktop\PyProject\auth" />
       <recent name="C:\Users\pilgu\OneDrive\Desktop\PyProject\GUI" />
-      <recent name="C:\Users\pilgu\OneDrive\Desktop\PyProject" />
     </key>
   </component>
   <component name="RunManager">
@@ -120,7 +119,7 @@
       <workItem from="1746507293606" duration="1131000" />
       <workItem from="1748429456356" duration="232000" />
       <workItem from="1748706265491" duration="14246000" />
-      <workItem from="1748724323101" duration="1404000" />
+      <workItem from="1748724323101" duration="3008000" />
     </task>
     <servers />
   </component>
