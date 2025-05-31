@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import ttk
 
-from GUI.main import mainMenu
+from GUI.startMenu import mainMenu
 from utils.Properties import Properties
 
 

@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import messagebox
 
-import GUI.main as main
+import GUI.startMenu as main
 from utils.Properties import Properties
 
 
