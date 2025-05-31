@@ -1,11 +1,11 @@
-from DB.DAO import userDao as DAO
+from DB.DAO import userDao as DAO, gameResultDao
 from DB.database import SessionLocal
 from DB.model.User import User
 
 # session = SessionLocal()
-dao = DAO.UserDAO()
-listUser = dao.get_all_users()
-print(listUser)
+# dao = DAO.UserDAO()
+# listUser = dao.get_all_users()
+# print(listUser)
 # user1 = User(id=1, username="user1",login="testLogin", password="123")
 # session.add(user1)
 # session.commit()
@@ -15,3 +15,7 @@ print(listUser)
 #     print(user.id, user.username, user.login, user.password)
 #
 # session.close()
+
+dao = gameResultDao.GameResultDAO()
+dao.create("Piotr","TimeGame",1,1)
+

@@ -1,3 +1,8 @@
+import bcrypt
+
+from DB.DAO import userDao
+
+
 class Person(object):
     """This class is an example of a person object.
 
@@ -11,14 +16,21 @@ class Person(object):
     """
     personDict = dict()
 
-    def __init__(self, nickname, password):
-        self.nickname = nickname
+    def __init__(self, login, password):
+        self.login = login
         self.password = password
-        Person.personDict[nickname] = password
+        Person.personDict[login] = password
 
     @staticmethod
-    def login(nickname, password):
-        return password == Person.personDict.get(nickname)
+    def check_password(input_password: str, hashed_password_from_db: str) -> bool:
+        return bcrypt.checkpw(input_password.encode('utf-8'), hashed_password_from_db.encode('utf-8'))
+
+    @staticmethod
+    def login(login, password):
+        dao = userDao.UserDAO()
+        user = dao.get_user_by_login(login)
+        return Person.check_password(password,user.password)
+
 
     @staticmethod
     def getLog():
@@ -29,5 +41,5 @@ class Person(object):
         return result
 
     def __str__(self):
-        return self.nickname
+        return self.login
 

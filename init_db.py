@@ -1,5 +1,6 @@
 from DB.database import engine, Base
 from DB.model.User import User
+from DB.model.GameResult import GameResult
 
 def init():
     Base.metadata.create_all(bind=engine)
