@@ -2,7 +2,6 @@ from DB.database import SessionLocal
 from DB.model.User import User
 import bcrypt
 
-from auth.registration import Person
 
 
 class UserDAO:
@@ -12,6 +11,7 @@ class UserDAO:
 
     def create(self, name: str, login: str, password: str) -> bool:
         try:
+            from auth.registration import Person
             hashedPassword = bcrypt.hashpw(password.encode("utf-8"), bcrypt.gensalt()).decode("utf-8")
 
             user = User(username=name, login=login, password=hashedPassword)

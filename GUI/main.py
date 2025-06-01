@@ -1,9 +1,6 @@
 import tkinter as tk
 
 from GUI import TimeGame, ResultsWindow
-import SettingsWindow
-from GUI.AuthorizationWindow import AuthorizationWindow
-from GUI.SettingsWindow import windowSetup
 from utils.Properties import Properties
 from GUI.startMenu import mainMenu
 

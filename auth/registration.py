@@ -1,5 +1,6 @@
 import bcrypt
 
+from DB import DAO
 from DB.DAO import userDao
 
 
@@ -30,6 +31,11 @@ class Person(object):
         dao = userDao.UserDAO()
         user = dao.get_user_by_login(login)
         return Person.check_password(password,user.password)
+
+    @staticmethod
+    def register(name,login, password):
+        dao = userDao.UserDAO()
+        dao.create(name, login, password)
 
 
     @staticmethod
