@@ -8,9 +8,9 @@ from utils.Properties import Properties
 class AuthorizationWindow:
 
     @staticmethod
-    def register():
-        properties = Properties()
-        size = properties.get("window-size")
+    def register(window_size):
+        size = window_size
+
 
         window = tk.Tk()
         window.geometry(f"{size}x{size}")
@@ -51,18 +51,21 @@ class AuthorizationWindow:
             window.destroy()
             GameTypeMenuWindow.window_setup(size, user)
 
+        def back():
+            window.destroy()
+            AuthorizationWindow.windowSetup(size)
 
 
         registerButton = tk.Button(window, text="Register",command=registerUser, background="#C3C7F4", width=10, font=("Arial", 16), relief="groove")
         registerButton.grid(row=5, column=2, pady=20)
-
+        backButton = tk.Button(window, text="back", command=back, background="#C3C7F4", width=10, font=("Arial", 16),relief="groove")
+        backButton.grid(row=5, column=0, pady=20, columnspan=2)
 
 
 
     @staticmethod
-    def login():
-        properties = Properties()
-        size = properties.get("window-size")
+    def login(window_size):
+        size = window_size
 
         window = tk.Tk()
         window.geometry(f"{size}x{size}")
@@ -101,10 +104,17 @@ class AuthorizationWindow:
             else:
                 print("Login Failed")
 
+        def back():
+            window.destroy()
+            AuthorizationWindow.windowSetup(size)
 
 
         logginButton = tk.Button(window, text="login",command=loginUser, background="#C3C7F4", width=10, font=("Arial", 16), relief="groove")
         logginButton.grid(row=4, column=2, pady=20)
+        backButton = tk.Button(window, text="back",command=back, background="#C3C7F4", width=10, font=("Arial", 16), relief="groove")
+        backButton.grid(row=4, column=0, pady=20,columnspan=2)
+
+
 
 
     @staticmethod
@@ -112,9 +122,8 @@ class AuthorizationWindow:
         GameTypeMenuWindow.window_setup(size, None)
 
     @staticmethod
-    def windowSetup():
-        properties = Properties()
-        size = properties.get("window-size")
+    def windowSetup(window_size):
+        size = window_size
 
         window = tk.Tk()
         window.geometry(f"{size}x{size}")
@@ -134,8 +143,8 @@ class AuthorizationWindow:
             from GUI.MainMenuWindow import MainMenuWindow
             MainMenuWindow.mainMenu(size)
 
-        registerButton = tk.Button(window, text="Register",command=lambda : (window.destroy(), AuthorizationWindow.register()), background="#C3C7F4", width=10, font=("Arial", 16), relief="groove")
-        loginButton = tk.Button(window, text="Login",command=lambda : (window.destroy(), AuthorizationWindow.login()), background="#C3C7F4", width=10, font=("Arial", 16), relief="groove")
+        registerButton = tk.Button(window, text="Register",command=lambda : (window.destroy(), AuthorizationWindow.register(size)), background="#C3C7F4", width=10, font=("Arial", 16), relief="groove")
+        loginButton = tk.Button(window, text="Login",command=lambda : (window.destroy(), AuthorizationWindow.login(size)), background="#C3C7F4", width=10, font=("Arial", 16), relief="groove")
         guestButton = tk.Button(window, text="Guest",command=lambda :(window.destroy(), AuthorizationWindow.guest(size)), background="#C3C7F4", width=10, font=("Arial", 16), relief="groove")
         backButton = tk.Button(window, text="Back",command=back, background="#C3C7F4", width=10, font=("Arial", 16), relief="groove")
 

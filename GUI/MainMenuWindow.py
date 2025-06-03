@@ -27,7 +27,7 @@ class MainMenuWindow():
         def buttonStart():
             from GUI.AuthorizationWindow import AuthorizationWindow
             menuWindow.destroy()
-            AuthorizationWindow.windowSetup()
+            AuthorizationWindow.windowSetup(size)
             # gameTypeMenu(size)
 
         def settingsMenu():
