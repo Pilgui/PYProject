@@ -4,11 +4,11 @@ from GUI import TimeGame
 from GUI.MainMenuWindow import MainMenuWindow
 
 class GameTypeMenuWindow:
-    def window_setup(size, login):
-        from DB.DAO import userDao
-        userDao = userDao.UserDAO()
-        user = userDao.get_user_by_login(login)
-        user_name = user.username
+    def window_setup(size, user):
+        if user != None:
+            user_name = user.username
+        else:
+            user_name = "Guest"
 
         window = tk.Tk()
         window.title("Game Type")

@@ -47,9 +47,9 @@ class AuthorizationWindow:
 
         def registerUser():
             registration.Person.register(nameEntry.get(), loginEntry.get(), passwordEntry.get())
-            login = loginEntry.get()
+            user = registration.Person.get_user_by_login(loginEntry.get())
             window.destroy()
-            GameTypeMenuWindow.window_setup(size, login)
+            GameTypeMenuWindow.window_setup(size, user)
 
 
 
@@ -95,9 +95,9 @@ class AuthorizationWindow:
         def loginUser():
             if registration.Person.login(loginEntry.get(), passwordEntry.get()):
                 print("Login Successful" , loginEntry.get())
-                login = loginEntry.get()
+                user = registration.Person.get_user_by_login(loginEntry.get())
                 window.destroy()
-                GameTypeMenuWindow.window_setup(size, login)
+                GameTypeMenuWindow.window_setup(size, user)
             else:
                 print("Login Failed")
 
@@ -108,8 +108,8 @@ class AuthorizationWindow:
 
 
     @staticmethod
-    def guest():
-        pass
+    def guest(size):
+        GameTypeMenuWindow.window_setup(size, None)
 
     @staticmethod
     def windowSetup():
@@ -136,7 +136,7 @@ class AuthorizationWindow:
 
         registerButton = tk.Button(window, text="Register",command=lambda : (window.destroy(), AuthorizationWindow.register()), background="#C3C7F4", width=10, font=("Arial", 16), relief="groove")
         loginButton = tk.Button(window, text="Login",command=lambda : (window.destroy(), AuthorizationWindow.login()), background="#C3C7F4", width=10, font=("Arial", 16), relief="groove")
-        guestButton = tk.Button(window, text="Guest",command=AuthorizationWindow.guest, background="#C3C7F4", width=10, font=("Arial", 16), relief="groove")
+        guestButton = tk.Button(window, text="Guest",command=lambda :(window.destroy(), AuthorizationWindow.guest(size)), background="#C3C7F4", width=10, font=("Arial", 16), relief="groove")
         backButton = tk.Button(window, text="Back",command=back, background="#C3C7F4", width=10, font=("Arial", 16), relief="groove")
 
 

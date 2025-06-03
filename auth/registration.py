@@ -37,6 +37,11 @@ class Person(object):
         dao = userDao.UserDAO()
         dao.create(name, login, password)
 
+    @staticmethod
+    def get_user_by_login (login):
+        dao = userDao.UserDAO()
+        user = dao.get_user_by_login(login)
+        return user
 
     @staticmethod
     def getLog():
