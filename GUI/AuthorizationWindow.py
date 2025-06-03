@@ -1,7 +1,7 @@
 import tkinter as tk
 
 
-import GUI.startMenu as startMenu
+from GUI.GameTypeMenuWindow import GameTypeMenuWindow
 from auth import registration
 from utils.Properties import Properties
 
@@ -47,6 +47,10 @@ class AuthorizationWindow:
 
         def registerUser():
             registration.Person.register(nameEntry.get(), loginEntry.get(), passwordEntry.get())
+            login = loginEntry.get()
+            window.destroy()
+            GameTypeMenuWindow.window_setup(size, login)
+
 
 
         registerButton = tk.Button(window, text="Register",command=registerUser, background="#C3C7F4", width=10, font=("Arial", 16), relief="groove")
@@ -90,8 +94,10 @@ class AuthorizationWindow:
 
         def loginUser():
             if registration.Person.login(loginEntry.get(), passwordEntry.get()):
-                print("Login Successful")
+                print("Login Successful" , loginEntry.get())
+                login = loginEntry.get()
                 window.destroy()
+                GameTypeMenuWindow.window_setup(size, login)
             else:
                 print("Login Failed")
 
@@ -125,7 +131,8 @@ class AuthorizationWindow:
 
         def back():
             window.destroy()
-            startMenu.mainMenu(size)
+            from GUI.MainMenuWindow import MainMenuWindow
+            MainMenuWindow.mainMenu(size)
 
         registerButton = tk.Button(window, text="Register",command=lambda : (window.destroy(), AuthorizationWindow.register()), background="#C3C7F4", width=10, font=("Arial", 16), relief="groove")
         loginButton = tk.Button(window, text="Login",command=lambda : (window.destroy(), AuthorizationWindow.login()), background="#C3C7F4", width=10, font=("Arial", 16), relief="groove")

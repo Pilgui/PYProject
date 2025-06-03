@@ -30,7 +30,7 @@ class Person(object):
     def login(login, password):
         dao = userDao.UserDAO()
         user = dao.get_user_by_login(login)
-        return Person.check_password(password,user.password)
+        return Person.check_password(password, user.password)
 
     @staticmethod
     def register(name,login, password):

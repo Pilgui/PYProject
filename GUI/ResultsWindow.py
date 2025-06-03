@@ -1,15 +1,12 @@
 import tkinter as tk
 from tkinter import ttk
-
-from GUI.startMenu import mainMenu
-from utils.Properties import Properties
+from GUI.MainMenuWindow import MainMenuWindow
 
 
 
+def windowSetup(results = None, windwow_size = 500):
 
-def windowSetup(results = None):
-    properties = Properties()
-    size = properties.get("window-size")
+    size = windwow_size
 
     results = [
         ("Anna", 10, 1),
@@ -36,7 +33,7 @@ def windowSetup(results = None):
 
     def backButtonClick():
         window.destroy()
-        mainMenu(size)
+        MainMenuWindow.mainMenu(size)
 
     backButton = tk.Button(window, text="Back", command=backButtonClick, background="#C3C7F4", width=10,
                            font=("Arial", 16), relief="groove")

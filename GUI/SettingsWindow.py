@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import messagebox
 
-import GUI.startMenu as main
+from GUI.MainMenuWindow import MainMenuWindow
 from utils.Properties import Properties
 
 
@@ -71,13 +71,13 @@ def windowSetup():
             print(int(level_var.get()))
             messagebox.showinfo("Settings Saved", "Settings saved")
             window.destroy()
-            main.mainMenu(new_size)
+            MainMenuWindow.mainMenu(new_size)
         except Exception as e:
             messagebox.showerror("Error", e)
 
     def goBack():
         window.destroy()
-        main.mainMenu(current_size)
+        MainMenuWindow.mainMenu(current_size)
 
     saveButton = tk.Button(window, text="Save", command=save, background="#C3C7F4", font=("Arial", 14), relief="groove", width=12)
     saveButton.grid(row=4, column=2, pady=10)
