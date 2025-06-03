@@ -16,7 +16,7 @@ class GameResult(Base):
 
 
     def __repr__(self):
-        return f"GameResult(id={self.id}, username={self.username}, gameName={self.gameName})"
+        return f"{self.id},{self.username},{self.gameName},{self.scoreInTimeGame},{self.scoreInGame}"
 
 
 

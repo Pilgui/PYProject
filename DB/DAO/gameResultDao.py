@@ -1,6 +1,6 @@
 from DB.database import SessionLocal
 from DB.model.GameResult import GameResult
-from DB.model.User import User
+
 
 class GameResultDAO:
     def __init__(self):
@@ -18,16 +18,16 @@ class GameResultDAO:
             print(e)
             return False
 
-    def get_gameResult_by_id(self, id: int) -> User:
-        return self.session.query(User).filter_by(id=id).first()
+    def get_gameResult_by_id(self, id: int) -> GameResult:
+        return self.session.query(GameResult).filter_by(id=id).first()
 
-    def get_all_gameResults(self) -> list[User]:
-        return self.session.query(User).all()
+    def get_all_gameResults(self) -> list[GameResult]:
+        return self.session.query(GameResult).all()
 
     def delete(self, id: int) -> bool:
-        user = self.get_gameResult_by_id(id)
-        if user:
-            self.session.delete(user)
+        gameResult = self.get_gameResult_by_id(id)
+        if gameResult:
+            self.session.delete(gameResult)
             self.session.commit()
             return True
         return False

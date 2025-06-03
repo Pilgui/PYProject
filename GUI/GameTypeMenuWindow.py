@@ -1,6 +1,6 @@
 import tkinter as tk
 
-from GUI import TimeGame
+from GUI.TimeGame import TimeGame
 from GUI.MainMenuWindow import MainMenuWindow
 
 class GameTypeMenuWindow:
@@ -24,7 +24,7 @@ class GameTypeMenuWindow:
 
         def startTimedGame():
             window.destroy()
-            TimeGame.startTimedGame(size)
+            TimeGame.startTimedGame(size,user)
         startTimeGameButton = tk.Button(window,text="Gra na czas", background="#C3C7F4", width=25, font=("Arial", 14), relief="groove",command=startTimedGame)
 
         startFailGameButton = tk.Button(window,text="Gra do pierwszego błędu", background="#C3C7F4",width=25, font=("Arial", 14), relief="groove")

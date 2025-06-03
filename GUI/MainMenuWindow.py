@@ -38,7 +38,7 @@ class MainMenuWindow():
         def buttonResults():
             menuWindow.destroy()
             from GUI import ResultsWindow
-            ResultsWindow.windowSetup(windwow_size=size)
+            ResultsWindow.ResultsWindow.windowSetup(size)
 
 
         menuButtonStart = tk.Button(menuWindow, text="Start", command=buttonStart, background="#C3C7F4", width=10, font=("Arial", 16), relief="groove")

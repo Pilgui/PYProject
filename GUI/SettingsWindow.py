@@ -35,7 +35,7 @@ def windowSetup():
     themeLabel = tk.Label(window, text="Theme :", font=("Arial", 12), background="#F2DDDC")
     themeLabel.grid(row=3, column=1, pady=10, sticky=tk.E)
 
-    size_options = ["500 x 500", "800 x 800", "1000 x 1000"]
+    size_options = ["800 x 800", "1000 x 1000"]
     size_var = tk.StringVar()
     size_var.set(f"{current_size} x {current_size}")
 
