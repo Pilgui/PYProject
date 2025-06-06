@@ -1,5 +1,6 @@
 import tkinter as tk
 
+from GUI.MistakeGame import MistakeGame
 from GUI.TimeGame import TimeGame
 from GUI.MainMenuWindow import MainMenuWindow
 
@@ -25,9 +26,13 @@ class GameTypeMenuWindow:
         def startTimedGame():
             window.destroy()
             TimeGame.startTimedGame(size,user)
+
+        def startMistakeGame():
+            window.destroy()
+            MistakeGame.startGame(size,[user,None,None,None])
         startTimeGameButton = tk.Button(window,text="Gra na czas", background="#C3C7F4", width=25, font=("Arial", 14), relief="groove",command=startTimedGame)
 
-        startFailGameButton = tk.Button(window,text="Gra do pierwszego błędu", background="#C3C7F4",width=25, font=("Arial", 14), relief="groove")
+        startFailGameButton = tk.Button(window,text="Gra do pierwszego błędu", background="#C3C7F4",width=25, font=("Arial", 14), relief="groove",command=startMistakeGame)
 
         def backButtonClick():
             window.destroy()

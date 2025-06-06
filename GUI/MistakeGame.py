@@ -15,6 +15,7 @@ class MistakeGame:
         active_user_index = 0
 
         eliminated_players = []
+        gameEnded = False
 
         window = tk.Tk()
         window.title("Gra na czas")
@@ -68,15 +69,22 @@ class MistakeGame:
 
 
         def showAnswer():
+            if gameEnded:
+                return
             nonlocal questionNum
             correctAnswer = questions[questionNum-1][1]
             for index,letter in enumerate(correctAnswer):
                 grid_cells[questionNum-1][index].config(text=letter.upper())
 
         def showGameEnd():
+            nonlocal gameEnded
+            gameEnded = True
+
             from DB.DAO import gameResultDao
             from GUI.MainMenuWindow import MainMenuWindow
-            # dao = gameResultDao.GameResultDAO().create(user_name1,"Time Game", score, 0)
+            dao = gameResultDao.GameResultDAO()
+            for index,name in enumerate(usernames):
+                   dao.create(name,"Mistake Game", 0, scores[index])
 
             for widget in window.winfo_children():
                 widget.destroy()
@@ -100,6 +108,8 @@ class MistakeGame:
             showGameEnd()
 
         def nextQuestion():
+            if gameEnded:
+                return
             nonlocal questionNum
             questionNum += 1
             if questionNum > len(questions):
@@ -113,6 +123,8 @@ class MistakeGame:
 
 
         def checkAnswers():
+            if gameEnded:
+                return
             nonlocal active_user_index, questionNum
             answer = answerEntry.get().strip()
 
@@ -146,5 +158,3 @@ class MistakeGame:
 
         window.mainloop()
 
-
-MistakeGame.startGame(800,[None,None,None,None])
