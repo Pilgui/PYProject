@@ -29,7 +29,9 @@ class GameTypeMenuWindow:
 
         def startMistakeGame():
             window.destroy()
-            MistakeGame.startGame(size,[user,None,None,None])
+            from GUI.MistakeAmountOfPlayersWindow import MistakeAmountOfPlayersWindow
+            MistakeAmountOfPlayersWindow.window_setup(size,user)
+
         startTimeGameButton = tk.Button(window,text="Gra na czas", background="#C3C7F4", width=25, font=("Arial", 14), relief="groove",command=startTimedGame)
 
         startFailGameButton = tk.Button(window,text="Gra do pierwszego błędu", background="#C3C7F4",width=25, font=("Arial", 14), relief="groove",command=startMistakeGame)

@@ -30,7 +30,7 @@ class ResultsWindow:
         tree.heading("Game name", text="Game name")
         tree.heading("Score in Time Game", text="Score in Time Game")
         tree.heading("Score in Game", text="Score in Game")
-        tree.pack(fill=tk.BOTH, expand=True, padx=10, pady=10 )
+        tree.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
 
         for row in results:
             tree.insert("", tk.END, values=row.split(","))
