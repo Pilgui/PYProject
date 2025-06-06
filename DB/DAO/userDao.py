@@ -14,6 +14,7 @@ class UserDAO:
             from auth.registration import Person
             hashedPassword = bcrypt.hashpw(password.encode("utf-8"), bcrypt.gensalt()).decode("utf-8")
 
+
             user = User(username=name, login=login, password=hashedPassword)
             self.session.add(user)
             self.session.commit()

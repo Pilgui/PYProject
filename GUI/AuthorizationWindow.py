@@ -1,5 +1,5 @@
 import tkinter as tk
-
+from tkinter import messagebox
 
 from GUI.GameTypeMenuWindow import GameTypeMenuWindow
 from auth import registration
@@ -103,6 +103,8 @@ class AuthorizationWindow:
                 GameTypeMenuWindow.window_setup(size, user)
             else:
                 print("Login Failed")
+                messagebox.showerror("Login failed","Wrong login or password")
+
 
         def back():
             window.destroy()

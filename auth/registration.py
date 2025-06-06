@@ -26,11 +26,17 @@ class Person(object):
     def check_password(input_password: str, hashed_password_from_db: str) -> bool:
         return bcrypt.checkpw(input_password.encode('utf-8'), hashed_password_from_db.encode('utf-8'))
 
+
     @staticmethod
     def login(login, password):
         dao = userDao.UserDAO()
-        user = dao.get_user_by_login(login)
-        return Person.check_password(password, user.password)
+        hashed_password = ""
+        try:
+            user = dao.get_user_by_login(login)
+            hashed_password = user.password
+        except:
+            return False
+        return Person.check_password(password, hashed_password)
 
     @staticmethod
     def register(name,login, password):
@@ -38,7 +44,7 @@ class Person(object):
         dao.create(name, login, password)
 
     @staticmethod
-    def get_user_by_login (login):
+    def get_user_by_login(login):
         dao = userDao.UserDAO()
         user = dao.get_user_by_login(login)
         return user
