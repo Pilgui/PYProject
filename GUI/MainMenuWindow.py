@@ -22,6 +22,8 @@ class MainMenuWindow():
 
 
         def buttonQuit():
+            from utils import ProjectUtil
+            ProjectUtil.ProjectUtil.exportPDF()
             menuWindow.destroy()
 
         def buttonStart():

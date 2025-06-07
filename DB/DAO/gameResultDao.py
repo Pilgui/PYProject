@@ -1,6 +1,6 @@
 from DB.database import SessionLocal
 from DB.model.GameResult import GameResult
-
+from utils import ProjectUtil
 
 class GameResultDAO:
     def __init__(self):
@@ -12,6 +12,7 @@ class GameResultDAO:
             gameResult = GameResult(username=userName, gameName=gameName, scoreInTimeGame=scoreInTimeGame,scoreInGame=scoreInGame)
             self.session.add(gameResult)
             self.session.commit()
+            ProjectUtil.ProjectUtil.exportPDF()
             return True
         except Exception as e:
             self.session.rollback()
