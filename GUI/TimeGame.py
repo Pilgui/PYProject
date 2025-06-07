@@ -44,7 +44,7 @@ class TimeGame:
         board_frame.pack(pady=10)
 
         for i, (question, correct) in enumerate(questions):
-            tk.Label(board_frame, text=f"{question}", font=("Arial", 12), bg="#C3C7F4", anchor="w",
+            tk.Label(board_frame, text=f"{i+1}.{question}", font=("Arial", 12), bg="#C3C7F4", anchor="w",
                      justify="left").grid(row=i, column=0, sticky="w", padx=10, pady=2)
             row_cells = []
 

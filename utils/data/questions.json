@@ -213,14 +213,14 @@
     "id": 31,
     "text": "What does CPU stand for?",
     "theme": "Technology",
-    "answer": "Central Processing Unit",
+    "answer": "Central Processor",
     "level": 1
   },
   {
     "id": 32,
     "text": "What does HTTP stand for?",
     "theme": "Technology",
-    "answer": "HyperText Transfer Protocol",
+    "answer": "HyperText Protocol",
     "level": 1
   },
   {
@@ -262,7 +262,7 @@
     "id": 38,
     "text": "What does RAM stand for?",
     "theme": "Technology",
-    "answer": "Random Access Memory",
+    "answer": "RAM memory",
     "level": 1
   },
   {
@@ -274,7 +274,7 @@
   },
   {
     "id": 40,
-    "text": "What is a common programming language for websites?",
+    "text": "Which language runs websites?",
     "theme": "Technology",
     "answer": "JavaScript",
     "level": 1
@@ -297,7 +297,7 @@
     "id": 43,
     "text": "Who discovered America?",
     "theme": "History",
-    "answer": "Christopher Columbus",
+    "answer": "Columbus",
     "level": 1
   },
   {
@@ -351,702 +351,702 @@
   },
   {
     "id": 51,
-    "text": "What is the capital of France?",
+    "text": "What is the capital city of Australia?",
     "theme": "Geography",
-    "answer": "Paris",
+    "answer": "Canberra",
     "level": 2
   },
   {
     "id": 52,
-    "text": "Which river is the longest in the world?",
+    "text": "What country borders Germany and Spain?",
     "theme": "Geography",
-    "answer": "Nile",
+    "answer": "France",
     "level": 2
   },
   {
     "id": 53,
-    "text": "Which country has the most islands?",
+    "text": "Which sea is between UK and Norway?",
     "theme": "Geography",
-    "answer": "Sweden",
+    "answer": "North Sea",
     "level": 2
   },
   {
     "id": 54,
-    "text": "In which continent is the Sahara Desert located?",
+    "text": "Which African country has the largest population?",
     "theme": "Geography",
-    "answer": "Africa",
+    "answer": "Nigeria",
     "level": 2
   },
   {
     "id": 55,
-    "text": "What is the smallest country in the world?",
+    "text": "Which country does the island of Bali belong to?",
     "theme": "Geography",
-    "answer": "Vatican City",
+    "answer": "Indonesia",
     "level": 2
   },
   {
     "id": 56,
-    "text": "Which ocean is the deepest?",
+    "text": "What is the longest river in Europe?",
     "theme": "Geography",
-    "answer": "Pacific Ocean",
+    "answer": "Volga",
     "level": 2
   },
   {
     "id": 57,
-    "text": "What is the capital of Japan?",
+    "text": "What desert is in north China and Mongolia?",
     "theme": "Geography",
-    "answer": "Tokyo",
+    "answer": "Gobi Desert",
     "level": 2
   },
   {
     "id": 58,
-    "text": "Which mountain is the highest on Earth?",
+    "text": "What mountain range separates Europe and Asia?",
     "theme": "Geography",
-    "answer": "Mount Everest",
+    "answer": "Ural Mountains",
     "level": 2
   },
   {
     "id": 59,
-    "text": "Which country has the most time zones?",
+    "text": "Which U.S. state is known as the 'Sunshine State'?",
     "theme": "Geography",
-    "answer": "France",
+    "answer": "Florida",
     "level": 2
   },
   {
     "id": 60,
-    "text": "What is the largest desert in the world?",
+    "text": "Which country has Buenos Aires as its capital?",
     "theme": "Geography",
-    "answer": "Antarctica",
+    "answer": "Argentina",
     "level": 2
   },
   {
     "id": 61,
-    "text": "What is the fastest land animal?",
+    "text": "Which mammal is capable of true flight?",
     "theme": "Animals",
-    "answer": "Cheetah",
+    "answer": "Bat",
     "level": 2
   },
   {
     "id": 62,
-    "text": "Which animal is known as the king of the jungle?",
+    "text": "Which continent has no snakes?",
     "theme": "Animals",
-    "answer": "Lion",
+    "answer": "Antarctica",
     "level": 2
   },
   {
     "id": 63,
-    "text": "What is the largest mammal?",
+    "text": "Which animal has the largest eyes in the animal kingdom?",
     "theme": "Animals",
-    "answer": "Blue whale",
+    "answer": "Squid",
     "level": 2
   },
   {
     "id": 64,
-    "text": "Which animal is known for playing dead?",
+    "text": "Which bird is the fastest in the world?",
     "theme": "Animals",
-    "answer": "Opossum",
+    "answer": "Falcon",
     "level": 2
   },
   {
     "id": 65,
-    "text": "What do pandas eat?",
+    "text": "What is a baby kangaroo called?",
     "theme": "Animals",
-    "answer": "Bamboo",
+    "answer": "Joey",
     "level": 2
   },
   {
     "id": 66,
-    "text": "Which bird can mimic human speech?",
+    "text": "Which marine animal is known for having eight arms?",
     "theme": "Animals",
-    "answer": "Parrot",
+    "answer": "Octopus",
     "level": 2
   },
   {
     "id": 67,
-    "text": "What is a group of lions called?",
+    "text": "What do you call a group of elephants?",
     "theme": "Animals",
-    "answer": "Pride",
+    "answer": "Herd",
     "level": 2
   },
   {
     "id": 68,
-    "text": "Which animal sleeps upside down?",
+    "text": "Which animal can change its color to blend into its environment?",
     "theme": "Animals",
-    "answer": "Bat",
+    "answer": "Chameleon",
     "level": 2
   },
   {
     "id": 69,
-    "text": "What animal has black and white stripes?",
+    "text": "What is the tallest land animal?",
     "theme": "Animals",
-    "answer": "Zebra",
+    "answer": "Giraffe",
     "level": 2
   },
   {
     "id": 70,
-    "text": "Which mammal lays eggs?",
+    "text": "Which mammal is known to have a pouch to carry its young?",
     "theme": "Animals",
-    "answer": "Platypus",
+    "answer": "Kangaroo",
     "level": 2
   },
   {
     "id": 71,
-    "text": "What planet is known as the Red Planet?",
+    "text": "What is the main gas found in the air we breathe?",
     "theme": "Science",
-    "answer": "Mars",
+    "answer": "Nitrogen",
     "level": 2
   },
   {
     "id": 72,
-    "text": "What gas do plants absorb?",
+    "text": "What planet is closest to the Sun?",
     "theme": "Science",
-    "answer": "Carbon dioxide",
+    "answer": "Mercury",
     "level": 2
   },
   {
     "id": 73,
-    "text": "What is the chemical symbol for water?",
+    "text": "What do we call animals that eat only plants?",
     "theme": "Science",
-    "answer": "H2O",
+    "answer": "Herbivores",
     "level": 2
   },
   {
     "id": 74,
-    "text": "What force keeps us on the ground?",
+    "text": "What body part pumps blood?",
     "theme": "Science",
-    "answer": "Gravity",
+    "answer": "Heart",
     "level": 2
   },
   {
     "id": 75,
-    "text": "What part of the cell contains DNA?",
+    "text": "What kind of energy comes from the sun?",
     "theme": "Science",
-    "answer": "Nucleus",
+    "answer": "Solar energy",
     "level": 2
   },
   {
     "id": 76,
-    "text": "What is the boiling point of water?",
+    "text": "How do plants make food?",
     "theme": "Science",
-    "answer": "100°C",
+    "answer": "Photosynthesis",
     "level": 2
   },
   {
     "id": 77,
-    "text": "What is the center of an atom called?",
+    "text": "Which organ helps humans breathe?",
     "theme": "Science",
-    "answer": "Nucleus",
+    "answer": "Lungs",
     "level": 2
   },
   {
     "id": 78,
-    "text": "What do bees collect from flowers?",
+    "text": "Which planet is known for its rings?",
     "theme": "Science",
-    "answer": "Nectar",
+    "answer": "Saturn",
     "level": 2
   },
   {
     "id": 79,
-    "text": "What is the human body's largest organ?",
+    "text": "What kind of scientist studies rocks?",
     "theme": "Science",
-    "answer": "Skin",
+    "answer": "Geologist",
     "level": 2
   },
   {
     "id": 80,
-    "text": "What scientist developed the theory of relativity?",
+    "text": "What is the unit of measurement for electrical current?",
     "theme": "Science",
-    "answer": "Einstein",
+    "answer": "Ampere",
     "level": 2
   },
   {
     "id": 81,
-    "text": "What does CPU stand for?",
+    "text": "What OS is made by Google for phones?",
     "theme": "Technology",
-    "answer": "Central Processing Unit",
+    "answer": "Android",
     "level": 2
   },
   {
     "id": 82,
-    "text": "What does HTTP stand for?",
+    "text": "What device types text into a computer?",
     "theme": "Technology",
-    "answer": "HyperText Transfer Protocol",
+    "answer": "Keyboard",
     "level": 2
   },
   {
     "id": 83,
-    "text": "Who founded Microsoft?",
+    "text": "What tech makes calls via Internet??",
     "theme": "Technology",
-    "answer": "Bill Gates",
+    "answer": "VoIP",
     "level": 2
   },
   {
     "id": 84,
-    "text": "What is the name of the first computer virus?",
+    "text": "What language is used for iOS apps?",
     "theme": "Technology",
-    "answer": "Creeper",
+    "answer": "Swift",
     "level": 2
   },
   {
     "id": 85,
-    "text": "What is used to style web pages?",
+    "text": "What does an antivirus do?",
     "theme": "Technology",
-    "answer": "CSS",
+    "answer": "Remove malware",
     "level": 2
   },
   {
     "id": 86,
-    "text": "Which company makes the iPhone?",
+    "text": "What does 'URL' stand for?",
     "theme": "Technology",
-    "answer": "Apple",
+    "answer": "Web address",
     "level": 2
   },
   {
     "id": 87,
-    "text": "What is the shortcut to copy in Windows?",
+    "text": "What is the term for unwanted email messages?",
     "theme": "Technology",
-    "answer": "Ctrl+C",
+    "answer": "Spam",
     "level": 2
   },
   {
     "id": 88,
-    "text": "What does RAM stand for?",
+    "text": "What does Ctrl+Z do?",
     "theme": "Technology",
-    "answer": "Random Access Memory",
+    "answer": "Undo",
     "level": 2
   },
   {
     "id": 89,
-    "text": "Which social media platform uses hashtags?",
+    "text": "What kind of file is a '.jpg'?",
     "theme": "Technology",
-    "answer": "Twitter",
+    "answer": "Image file",
     "level": 2
   },
   {
     "id": 90,
-    "text": "What is a common programming language for websites?",
+    "text": "Who made the Windows OS?",
     "theme": "Technology",
-    "answer": "JavaScript",
+    "answer": "Microsoft",
     "level": 2
   },
   {
     "id": 91,
-    "text": "Who was the first President of the USA?",
+    "text": "Who wrote the Declaration of Independence?",
     "theme": "History",
-    "answer": "George Washington",
+    "answer": "Thomas Jefferson",
     "level": 2
   },
   {
     "id": 92,
-    "text": "In which year did World War II end?",
+    "text": "What empire was ruled by Julius Caesar?",
     "theme": "History",
-    "answer": "1945",
+    "answer": "Roman Empire",
     "level": 2
   },
   {
     "id": 93,
-    "text": "Who discovered America?",
+    "text": "What country was formerly known as Persia?",
     "theme": "History",
-    "answer": "Christopher Columbus",
+    "answer": "Iran",
     "level": 2
   },
   {
     "id": 94,
-    "text": "What wall divided Berlin?",
+    "text": "What was the first satellite in space?",
     "theme": "History",
-    "answer": "Berlin Wall",
+    "answer": "Sputnik",
     "level": 2
   },
   {
     "id": 95,
-    "text": "What ancient civilization built the pyramids?",
+    "text": "What war split North and South USA?",
     "theme": "History",
-    "answer": "Egyptians",
+    "answer": "Civil War",
     "level": 2
   },
   {
     "id": 96,
-    "text": "Who was known as the Maid of Orléans?",
+    "text": "What Roman wall was built in Britain?",
     "theme": "History",
-    "answer": "Joan of Arc",
+    "answer": "Hadrian's Wall",
     "level": 2
   },
   {
     "id": 97,
-    "text": "Who was the emperor of France?",
+    "text": "Who led the USSR in World War II?",
     "theme": "History",
-    "answer": "Napoleon Bonaparte",
+    "answer": "Joseph Stalin",
     "level": 2
   },
   {
     "id": 98,
-    "text": "What ship sank in 1912?",
+    "text": "What year did the Berlin Wall fall?",
     "theme": "History",
-    "answer": "Titanic",
+    "answer": "1989",
     "level": 2
   },
   {
     "id": 99,
-    "text": "Where were the first Olympic Games held?",
+    "text": "Who was the first man to step on the Moon?",
     "theme": "History",
-    "answer": "Greece",
+    "answer": "Neil Armstrong",
     "level": 2
   },
   {
     "id": 100,
-    "text": "Who was the leader of Nazi Germany?",
+    "text": "What event started World War I?",
     "theme": "History",
-    "answer": "Adolf Hitler",
+    "answer": "Ferdinand's kills",
     "level": 2
   },
   {
     "id": 101,
-    "text": "What is the capital of France?",
+    "text": "What country has most active volcanoes?",
     "theme": "Geography",
-    "answer": "Paris",
+    "answer": "Indonesia",
     "level": 3
   },
   {
     "id": 102,
-    "text": "Which river is the longest in the world?",
+    "text": "What is the longest mountain range in the world?",
     "theme": "Geography",
-    "answer": "Nile",
+    "answer": "Andes",
     "level": 3
   },
   {
     "id": 103,
-    "text": "Which country has the most islands?",
+    "text": "Which capital is on two continents?",
     "theme": "Geography",
-    "answer": "Sweden",
+    "answer": "Istanbul",
     "level": 3
   },
   {
     "id": 104,
-    "text": "In which continent is the Sahara Desert located?",
+    "text": "Which country is home to the Great Victoria Desert?",
     "theme": "Geography",
-    "answer": "Africa",
+    "answer": "Australia",
     "level": 3
   },
   {
     "id": 105,
-    "text": "What is the smallest country in the world?",
+    "text": "What is the 2nd largest country by area?",
     "theme": "Geography",
-    "answer": "Vatican City",
+    "answer": "Canada",
     "level": 3
   },
   {
     "id": 106,
-    "text": "Which ocean is the deepest?",
+    "text": "Which river flows through the Grand Canyon?",
     "theme": "Geography",
-    "answer": "Pacific Ocean",
+    "answer": "Colorado River",
     "level": 3
   },
   {
     "id": 107,
-    "text": "What is the capital of Japan?",
+    "text": "Which country has the most natural lakes?",
     "theme": "Geography",
-    "answer": "Tokyo",
+    "answer": "Canada",
     "level": 3
   },
   {
     "id": 108,
-    "text": "Which mountain is the highest on Earth?",
+    "text": "What trench is the ocean’s deepest point?",
     "theme": "Geography",
-    "answer": "Mount Everest",
+    "answer": "Mariana Trench",
     "level": 3
   },
   {
     "id": 109,
-    "text": "Which country has the most time zones?",
+    "text": "What country has the longest coastline?",
     "theme": "Geography",
-    "answer": "France",
+    "answer": "Canada",
     "level": 3
   },
   {
     "id": 110,
-    "text": "What is the largest desert in the world?",
+    "text": "What’s the largest non-continent island?",
     "theme": "Geography",
-    "answer": "Antarctica",
+    "answer": "Greenland",
     "level": 3
   },
   {
     "id": 111,
-    "text": "What is the fastest land animal?",
+    "text": "What animal has the strongest bite?",
     "theme": "Animals",
-    "answer": "Cheetah",
+    "answer": "Crocodile",
     "level": 3
   },
   {
     "id": 112,
-    "text": "Which animal is known as the king of the jungle?",
-    "theme": "Animals",
-    "answer": "Lion",
-    "level": 3
-  },
-  {
-    "id": 113,
-    "text": "What is the largest mammal?",
-    "theme": "Animals",
-    "answer": "Blue whale",
-    "level": 3
-  },
-  {
-    "id": 114,
-    "text": "Which animal is known for playing dead?",
-    "theme": "Animals",
-    "answer": "Opossum",
-    "level": 3
-  },
-  {
-    "id": 115,
-    "text": "What do pandas eat?",
-    "theme": "Animals",
-    "answer": "Bamboo",
-    "level": 3
-  },
-  {
-    "id": 116,
-    "text": "Which bird can mimic human speech?",
-    "theme": "Animals",
-    "answer": "Parrot",
-    "level": 3
-  },
-  {
-    "id": 117,
-    "text": "What is a group of lions called?",
-    "theme": "Animals",
-    "answer": "Pride",
-    "level": 3
-  },
-  {
-    "id": 118,
-    "text": "Which animal sleeps upside down?",
-    "theme": "Animals",
-    "answer": "Bat",
-    "level": 3
-  },
-  {
-    "id": 119,
-    "text": "What animal has black and white stripes?",
-    "theme": "Animals",
-    "answer": "Zebra",
-    "level": 3
-  },
-  {
-    "id": 120,
-    "text": "Which mammal lays eggs?",
+    "text": "What is the only venomous mammal in the world?",
     "theme": "Animals",
     "answer": "Platypus",
     "level": 3
   },
   {
+    "id": 113,
+    "text": "Which insect has the fastest wing beat?",
+    "theme": "Animals",
+    "answer": "Midge",
+    "level": 3
+  },
+  {
+    "id": 114,
+    "text": "What is the largest species of shark?",
+    "theme": "Animals",
+    "answer": "Whale shark",
+    "level": 3
+  },
+  {
+    "id": 115,
+    "text": "Which bird has the largest wingspan?",
+    "theme": "Animals",
+    "answer": "Albatross",
+    "level": 3
+  },
+  {
+    "id": 116,
+    "text": "Which mammal has the longest pregnancy?",
+    "theme": "Animals",
+    "answer": "Elephant",
+    "level": 3
+  },
+  {
+    "id": 117,
+    "text": "Which animal can survive being frozen and thawed?",
+    "theme": "Animals",
+    "answer": "Wood frog",
+    "level": 3
+  },
+  {
+    "id": 118,
+    "text": "What sea animal can regrow limbs?",
+    "theme": "Animals",
+    "answer": "Starfish",
+    "level": 3
+  },
+  {
+    "id": 119,
+    "text": "What is the only bird that can fly backward?",
+    "theme": "Animals",
+    "answer": "Hummingbird",
+    "level": 3
+  },
+  {
+    "id": 120,
+    "text": "What animal has no brain or heart?",
+    "theme": "Animals",
+    "answer": "Jellyfish",
+    "level": 3
+  },
+  {
     "id": 121,
-    "text": "What planet is known as the Red Planet?",
+    "text": "Which brain part controls balance?",
     "theme": "Science",
-    "answer": "Mars",
+    "answer": "Cerebellum",
     "level": 3
   },
   {
     "id": 122,
-    "text": "What gas do plants absorb?",
+    "text": "Which element has the atomic number 1?",
+    "theme": "Science",
+    "answer": "Hydrogen",
+    "level": 3
+  },
+  {
+    "id": 123,
+    "text": "What animals keep body temperature stable?",
+    "theme": "Science",
+    "answer": "Endothermic",
+    "level": 3
+  },
+  {
+    "id": 124,
+    "text": "Which gas is most responsible for the greenhouse effect?",
     "theme": "Science",
     "answer": "Carbon dioxide",
     "level": 3
   },
   {
-    "id": 123,
-    "text": "What is the chemical symbol for water?",
-    "theme": "Science",
-    "answer": "H2O",
-    "level": 3
-  },
-  {
-    "id": 124,
-    "text": "What force keeps us on the ground?",
-    "theme": "Science",
-    "answer": "Gravity",
-    "level": 3
-  },
-  {
     "id": 125,
-    "text": "What part of the cell contains DNA?",
+    "text": "What is the pH level of pure water?",
     "theme": "Science",
-    "answer": "Nucleus",
+    "answer": "7",
     "level": 3
   },
   {
     "id": 126,
-    "text": "What is the boiling point of water?",
+    "text": "Which organ in the human body produces insulin?",
     "theme": "Science",
-    "answer": "100°C",
+    "answer": "Pancreas",
     "level": 3
   },
   {
     "id": 127,
-    "text": "What is the center of an atom called?",
+    "text": "What do you call the change from a liquid to a gas?",
     "theme": "Science",
-    "answer": "Nucleus",
+    "answer": "Evaporation",
     "level": 3
   },
   {
     "id": 128,
-    "text": "What do bees collect from flowers?",
+    "text": "Which planet has the strongest gravity?",
     "theme": "Science",
-    "answer": "Nectar",
+    "answer": "Jupiter",
     "level": 3
   },
   {
     "id": 129,
-    "text": "What is the human body's largest organ?",
+    "text": "Which part of the atom has a negative charge?",
     "theme": "Science",
-    "answer": "Skin",
+    "answer": "Electron",
     "level": 3
   },
   {
     "id": 130,
-    "text": "What scientist developed the theory of relativity?",
+    "text": "What do we call a scientist who studies weather?",
     "theme": "Science",
-    "answer": "Einstein",
+    "answer": "Meteorologist",
     "level": 3
   },
   {
     "id": 131,
-    "text": "What does CPU stand for?",
+    "text": "What does 'IP' stand for in IP address?",
     "theme": "Technology",
-    "answer": "Central Processing Unit",
+    "answer": "IP",
     "level": 3
   },
   {
     "id": 132,
-    "text": "What does HTTP stand for?",
+    "text": "What was the first programmable computer?",
     "theme": "Technology",
-    "answer": "HyperText Transfer Protocol",
+    "answer": "Z3",
     "level": 3
   },
   {
     "id": 133,
-    "text": "Who founded Microsoft?",
+    "text": "Which language is popular in AI and data science?",
     "theme": "Technology",
-    "answer": "Bill Gates",
+    "answer": "Python",
     "level": 3
   },
   {
     "id": 134,
-    "text": "What is the name of the first computer virus?",
+    "text": "What does 'HTML' stand for?",
     "theme": "Technology",
-    "answer": "Creeper",
+    "answer": "HTML code",
     "level": 3
   },
   {
     "id": 135,
-    "text": "What is used to style web pages?",
+    "text": "Which component is considered the 'brain' of the computer?",
     "theme": "Technology",
-    "answer": "CSS",
+    "answer": "CPU",
     "level": 3
   },
   {
     "id": 136,
-    "text": "Which company makes the iPhone?",
+    "text": "What does 'SSD' stand for in computing?",
     "theme": "Technology",
-    "answer": "Apple",
+    "answer": "SSD Drive",
     "level": 3
   },
   {
     "id": 137,
-    "text": "What is the shortcut to copy in Windows?",
+    "text": "What is harmful software called?",
     "theme": "Technology",
-    "answer": "Ctrl+C",
+    "answer": "Malware",
     "level": 3
   },
   {
     "id": 138,
-    "text": "What does RAM stand for?",
+    "text": "Which key refreshes a webpage?",
     "theme": "Technology",
-    "answer": "Random Access Memory",
+    "answer": "F5",
     "level": 3
   },
   {
     "id": 139,
-    "text": "Which social media platform uses hashtags?",
+    "text": "Which tech connects devices wirelessly nearby?",
     "theme": "Technology",
-    "answer": "Twitter",
+    "answer": "Bluetooth",
     "level": 3
   },
   {
     "id": 140,
-    "text": "What is a common programming language for websites?",
+    "text": "Who made the Linux kernel?",
     "theme": "Technology",
-    "answer": "JavaScript",
+    "answer": "Torvalds",
     "level": 3
   },
   {
     "id": 141,
-    "text": "Who was the first President of the USA?",
+    "text": "What event began the French Revolution?",
     "theme": "History",
-    "answer": "George Washington",
+    "answer": "Bastille storming",
     "level": 3
   },
   {
     "id": 142,
-    "text": "In which year did World War II end?",
+    "text": "Who ruled Britain longest before Elizabeth II?",
     "theme": "History",
-    "answer": "1945",
+    "answer": "Queen Victoria",
     "level": 3
   },
   {
     "id": 143,
-    "text": "Who discovered America?",
+    "text": "What empire did Genghis Khan found?",
     "theme": "History",
-    "answer": "Christopher Columbus",
+    "answer": "Mongol Empire",
     "level": 3
   },
   {
     "id": 144,
-    "text": "What wall divided Berlin?",
+    "text": "Which treaty ended World War I?",
     "theme": "History",
-    "answer": "Berlin Wall",
+    "answer": "Versailles Treaty",
     "level": 3
   },
   {
     "id": 145,
-    "text": "What ancient civilization built the pyramids?",
+    "text": "Which civilization built Machu Picchu?",
     "theme": "History",
-    "answer": "Egyptians",
+    "answer": "Inca",
     "level": 3
   },
   {
     "id": 146,
-    "text": "Who was known as the Maid of Orléans?",
+    "text": "Which country split after World War II?",
     "theme": "History",
-    "answer": "Joan of Arc",
+    "answer": "Germany",
     "level": 3
   },
   {
     "id": 147,
-    "text": "Who was the emperor of France?",
+    "text": "Who was UK's first female Prime Minister?",
     "theme": "History",
-    "answer": "Napoleon Bonaparte",
+    "answer": "Margaret Thatcher",
     "level": 3
   },
   {
     "id": 148,
-    "text": "What ship sank in 1912?",
+    "text": "What major event happened on July 20, 1969?",
     "theme": "History",
-    "answer": "Titanic",
+    "answer": "Moon landing",
     "level": 3
   },
   {
     "id": 149,
-    "text": "Where were the first Olympic Games held?",
+    "text": "Who was assassinated in Sarajevo in 1914?",
     "theme": "History",
-    "answer": "Greece",
+    "answer": "Franz Ferdinand",
     "level": 3
   },
   {
     "id": 150,
-    "text": "Who was the British Prime Minister during World War II?",
+    "text": "What city was buried by Vesuvius?",
     "theme": "History",
-    "answer": "Winston Churchill",
+    "answer": "Pompeii",
     "level": 3
   }
 ]

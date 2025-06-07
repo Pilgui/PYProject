@@ -15,7 +15,7 @@ class QuestionOrganizer:
 
         questions = []
         for q in questionsObjects:
-            questions.append((f"{q.id}. {q.text}", q.answer))
+            questions.append((q.text, q.answer))
 
         return questions
 

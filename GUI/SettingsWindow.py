@@ -51,7 +51,7 @@ def windowSetup():
     levelMenu.config(font=("Arial", 12), bg="#C3C7F4", relief="groove", width=12)
     levelMenu.grid(row=2, column=2, pady=10, padx=10)
 
-    theme_options = ["Geography", "2", "3"]
+    theme_options = ["Geography", "Animals", "Science","Technology","History"]
     theme_var = tk.StringVar()
     theme_var.set(current_theme)
 
