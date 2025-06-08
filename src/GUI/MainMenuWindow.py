@@ -2,9 +2,17 @@ import tkinter as tk
 
 
 class MainMenuWindow():
-
+    """
+    Uruchamia GUI na głównym menu.
+    """
     @staticmethod
     def mainMenu(size):
+        """
+        Tworzy okienko głównego menu.
+
+        :param size: Rozmiar strony kwadratu okienka.
+        :type size: int
+        """
         menuWindow = tk.Tk()
         menuWindow.geometry(f"{size}x{size}")
         menuWindow.resizable(False, False)
@@ -22,22 +30,24 @@ class MainMenuWindow():
 
 
         def buttonQuit():
+            from src.utils import ProjectUtil
+            ProjectUtil.ProjectUtil.exportPDF()
             menuWindow.destroy()
 
         def buttonStart():
-            from GUI.AuthorizationWindow import AuthorizationWindow
+            from src.GUI.AuthorizationWindow import AuthorizationWindow
             menuWindow.destroy()
             AuthorizationWindow.windowSetup(size)
             # gameTypeMenu(size)
 
         def settingsMenu():
             menuWindow.destroy()
-            from GUI import SettingsWindow
+            from src.GUI import SettingsWindow
             SettingsWindow.windowSetup()
 
         def buttonResults():
             menuWindow.destroy()
-            from GUI import ResultsWindow
+            from src.GUI import ResultsWindow
             ResultsWindow.ResultsWindow.windowSetup(size)
 
 

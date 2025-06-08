@@ -1,5 +1,5 @@
-from GUI.MainMenuWindow import MainMenuWindow
-from utils.Properties import Properties
+from src.GUI.MainMenuWindow import MainMenuWindow
+from src.utils.Properties import Properties
 
 properties = Properties()
 main_size = properties.get("window-size")

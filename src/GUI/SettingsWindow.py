@@ -1,11 +1,14 @@
 import tkinter as tk
 from tkinter import messagebox
 
-from GUI.MainMenuWindow import MainMenuWindow
-from utils.Properties import Properties
+from src.GUI.MainMenuWindow import MainMenuWindow
+from src.utils.Properties import Properties
 
 
 def windowSetup():
+    """
+    Tworzy okienko ustawień gry.
+    """
     properties = Properties()
     current_size = properties.get("window-size")
     current_level = properties.get("level")

@@ -1,11 +1,21 @@
 import tkinter as tk
 
-from game.QuestionOrganizer import QuestionOrganizer
+from src.game.QuestionOrganizer import QuestionOrganizer
 
 class TimeGame:
+    """
+    Wyprowadza na ekran grę na czas.
+    """
     @staticmethod
     def startTimedGame(size, user):
+        """
+        Tworzy okienko gry na czas.
 
+        :param size: Rozmiar strony kwadratu okienka.
+        :type size: int
+        :param user: użytkownik biorący udział w grze.
+        :type user: User
+        """
         if user != None:
             user_name = user.username
         else:
@@ -69,9 +79,9 @@ class TimeGame:
                 grid_cells[questionNum-1][index].config(text=letter.upper())
 
         def showGameEnd():
-            from DB.DAO import gameResultDao
-            from GUI.MainMenuWindow import MainMenuWindow
-            dao = gameResultDao.GameResultDAO().create(user_name,"Time Game", score, 0)
+            from src.DB.DAO import gameResultDao
+            from src.GUI.MainMenuWindow import MainMenuWindow
+            dao = gameResultDao.GameResultDAO().create(user_name, "Time Game", score, 0)
 
             for widget in window.winfo_children():
                 widget.destroy()

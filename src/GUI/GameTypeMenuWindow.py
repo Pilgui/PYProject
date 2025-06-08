@@ -1,11 +1,28 @@
 import tkinter as tk
 
-from GUI.MistakeGame import MistakeGame
-from GUI.TimeGame import TimeGame
-from GUI.MainMenuWindow import MainMenuWindow
+from src.GUI.TimeGame import TimeGame
+from src.GUI.MainMenuWindow import MainMenuWindow
 
 class GameTypeMenuWindow:
+    """
+    Okno wyboru typu gry w krzyżówcę.
+
+    Wyświetla menu z trzema opcjami:
+    - Gra na czas
+    - Gra do pierwszego błędu
+    - Powrót do głównego menu
+
+    Zależnie od zalogowanego użytkownika pokazuje imię lub "Guest".
+    """
     def window_setup(size, user):
+        """
+        Tworzy i wyświetla okno wyboru typu gry.
+
+        :param size: Rozmiar strony kwadratu okienka.
+        :type size: int
+        :param user: Obiekt użytkownika lub None (jeśli gra jako gość).
+        :type user: User | None
+        """
         if user != None:
             user_name = user.username
         else:
@@ -29,7 +46,7 @@ class GameTypeMenuWindow:
 
         def startMistakeGame():
             window.destroy()
-            from GUI.MistakeAmountOfPlayersWindow import MistakeAmountOfPlayersWindow
+            from src.GUI.MistakeAmountOfPlayersWindow import MistakeAmountOfPlayersWindow
             MistakeAmountOfPlayersWindow.window_setup(size,user)
 
         startTimeGameButton = tk.Button(window,text="Gra na czas", background="#C3C7F4", width=25, font=("Arial", 14), relief="groove",command=startTimedGame)

@@ -1,12 +1,22 @@
 import tkinter as tk
 
-from GUI.AuthorizePlayersWindow import AuthorizePlayersWindow
+from src.GUI.AuthorizePlayersWindow import AuthorizePlayersWindow
 
 
 class MistakeAmountOfPlayersWindow:
-
+    """
+    Wyprowadza na ekran okno do dodania graczy dla gry do pierwszej pomyłki.
+    """
     @staticmethod
     def window_setup(window_size, user):
+        """
+        Tworzy okienko do dodania graczy dla gry do pierwszej pomyłki.
+
+        :param window_size: Rozmiar strony kwadratu okienka.
+        :type window_size: int
+        :param user: Użytkownik który uruchomił grę do pierwszej pomyłki.
+        :type user: User
+        """
         size = window_size
 
         window = tk.Tk()
@@ -25,7 +35,7 @@ class MistakeAmountOfPlayersWindow:
 
         def back():
             window.destroy()
-            from GUI.MainMenuWindow import MainMenuWindow
+            from src.GUI.MainMenuWindow import MainMenuWindow
             MainMenuWindow.mainMenu(size)
 
 

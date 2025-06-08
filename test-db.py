@@ -1,6 +1,4 @@
-from DB.DAO import userDao as DAO, gameResultDao
-from DB.database import SessionLocal
-from DB.model.User import User
+from src.DB.DAO import gameResultDao
 
 # session = SessionLocal()
 # dao = DAO.UserDAO()

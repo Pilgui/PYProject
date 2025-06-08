@@ -1,12 +1,21 @@
 import tkinter as tk
 from tkinter import ttk
-from GUI.MainMenuWindow import MainMenuWindow
+from src.GUI.MainMenuWindow import MainMenuWindow
 
 
 class ResultsWindow:
+    """
+    Wyprowadza na ekran tabelę wyników.
+    """
     @staticmethod
     def windowSetup(window_size):
-        from DB.DAO import gameResultDao
+        """
+        Tworzy okienko zawierające tabelę wyników graczy.
+
+        :param window_size: Rozmiar strony kwadratu okienka.
+        :type window_size: int
+        """
+        from src.DB.DAO import gameResultDao
         dao = gameResultDao.GameResultDAO()
         size = window_size
 
