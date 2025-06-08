@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import messagebox
 
 from src.GUI.GameTypeMenuWindow import GameTypeMenuWindow
-from src.auth import Person
+from src.auth.Person import Person
 
 
 class AuthorizationWindow:
@@ -65,8 +65,8 @@ class AuthorizationWindow:
         passwordEntry.grid(row=4, column=2, padx=10, pady=5)
 
         def registerUser():
-            registration.Person.register(nameEntry.get(), loginEntry.get(), passwordEntry.get())
-            user = registration.Person.get_user_by_login(loginEntry.get())
+            Person.register(nameEntry.get(), loginEntry.get(), passwordEntry.get())
+            user = Person.get_user_by_login(loginEntry.get())
             window.destroy()
             GameTypeMenuWindow.window_setup(size, user)
 
@@ -124,9 +124,9 @@ class AuthorizationWindow:
 
 
         def loginUser():
-            if registration.Person.login(loginEntry.get(), passwordEntry.get()):
+            if Person.login(loginEntry.get(), passwordEntry.get()):
                 print("Login Successful" , loginEntry.get())
-                user = registration.Person.get_user_by_login(loginEntry.get())
+                user = Person.get_user_by_login(loginEntry.get())
                 window.destroy()
                 GameTypeMenuWindow.window_setup(size, user)
             else:

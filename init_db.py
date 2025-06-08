@@ -1,4 +1,4 @@
-from src.DB import engine, Base
+from src.DB.database import engine, Base
 
 
 def init():

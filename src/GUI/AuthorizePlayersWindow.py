@@ -50,10 +50,10 @@ class AuthorizePlayersWindow:
             password = simpledialog.askstring("Login", f"Enter your password for player {index}: ")
             if not login or not password:
                 return
-            from src.auth import Person
-            if registration.Person.login(login, password):
+            from src.auth.Person import Person
+            if Person.login(login, password):
                 print("Successfully logged in")
-                user = registration.Person.get_user_by_login(login)
+                user = Person.get_user_by_login(login)
                 if user:
                     users[index] = user
                     refresh_labels()
