@@ -1,13 +1,10 @@
-
-# id name login password
-
 from sqlalchemy import Column, Integer, String
 from src.DB.database import Base
 
 class User(Base):
     """
-        Model ORM reprezentujący użytkowników gry zapisywanych w bazie danych.
-        """
+    Model ORM reprezentujący użytkowników gry zapisywanych w bazie danych.
+    """
     __tablename__ = "user"
 
     id = Column(Integer, primary_key=True, index=True, autoincrement=True)

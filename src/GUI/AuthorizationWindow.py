@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import messagebox
 
 from src.GUI.GameTypeMenuWindow import GameTypeMenuWindow
-from src.auth import registration
+from src.auth import Person
 
 
 class AuthorizationWindow:

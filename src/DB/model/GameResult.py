@@ -1,7 +1,3 @@
-
-
-# userName gameName scoreinTimeGame scoreInGame
-
 from sqlalchemy import Column, Integer, String
 from src.DB.database import Base
 

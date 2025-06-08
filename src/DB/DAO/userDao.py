@@ -34,7 +34,7 @@ class UserDAO:
         :rtype: bool
         """
         try:
-            from src.auth.registration import Person
+            from src.auth.Person import Person
             hashedPassword = bcrypt.hashpw(password.encode("utf-8"), bcrypt.gensalt()).decode("utf-8")
 
             user = User(username=name, login=login, password=hashedPassword)
