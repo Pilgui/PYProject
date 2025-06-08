@@ -2,36 +2,68 @@ from json import load
 from json import dump
 from fpdf import FPDF
 
-from utils.Properties import Properties
-from utils.QuestionsLoader import QuestionsLoader
+from src.utils.Properties import Properties
+from src.utils.QuestionsLoader import QuestionsLoader
 
 
 class ProjectUtil:
+    """
+    Klasa pomocnicza zawierająca metody statyczne do obsługi pytań, opcji gry oraz eksportu wyników do PDF.
+
+    Zawiera narzędzia do:
+    - wczytywania pytań,
+    - odczytu i zapisu ustawień,
+    - zapisu nowych pytań,
+    - eksportu wyników do pliku PDF.
+    """
 
     @staticmethod
     def getQuestions():
+        """
+        Wczytuje wszystkie pytania z pliku `questions.json`.
+
+        :return: Lista pytań wczytana z pliku.
+        :rtype: list[Question]
+        """
         questionLoader = QuestionsLoader("questions.json")
         questions = questionLoader.get_all_questions()
         return questions
 
     @staticmethod
     def getSavedOptions():
+        """
+        Wczytuje zapisane ustawienia z pliku `properties.json`.
+
+        :return: Słownik zawierający okno gry, poziom i motyw.
+        :rtype: dict[str, Any]
+        """
         properties = Properties()
         options = {
             "window-size": properties.get(key="window-size"),
             "level": properties.get(key="level"),
             "theme": properties.get(key="theme")
-                   }
+        }
         return options
 
     @staticmethod
     def saveOptions(optionsToSave):
+        """
+        Zapisuje przekazane opcje do pliku `options.json`.
+
+        :param optionsToSave: Słownik z opcjami do zapisania.
+        :type optionsToSave: dict
+        """
         with open('options.json', 'w') as options:
             dump(optionsToSave, options, indent=4)
 
     @staticmethod
     def saveQuestion(question):
-        # może być do poprawy, bo może nie istnieć plik
+        """
+        Zapisuje pytanie do pliku `questions.json`.
+
+        :param question: Obiekt pytania do zapisania. Wymaga, by `question.id` był unikalny i zapisywalny jako klucz JSON.
+        :type question: Question
+        """
         with open('questions.json', 'r') as questions:
             data = load(questions)
         data[question.id] = question
@@ -40,7 +72,12 @@ class ProjectUtil:
 
     @staticmethod
     def exportPDF():
-        from DB.DAO import gameResultDao
+        """
+        Eksportuje wyniki graczy z bazy danych do pliku PDF o nazwie `Highscore.pdf`.
+
+        Dane pobierane są za pomocą `GameResultDAO`, a następnie renderowane jako tabela w pliku PDF.
+        """
+        from src.DB.DAO import gameResultDao
         dao = gameResultDao.GameResultDAO()
 
         results = []
@@ -85,6 +122,6 @@ class ProjectUtil:
                     i = 0
                     pdf.ln(line_height)
                 else:
-                    i+=1
+                    i += 1
 
         pdf.output("Highscore.pdf")

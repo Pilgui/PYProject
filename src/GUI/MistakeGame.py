@@ -1,10 +1,21 @@
 import tkinter as tk
 
-from game.QuestionOrganizer import QuestionOrganizer
+from src.game.QuestionOrganizer import QuestionOrganizer
 
 class MistakeGame:
+    """
+    Wyprowadza na ekran grę do pierwszej pomyłki.
+    """
     @staticmethod
     def startGame(size, users):
+        """
+        Tworzy okienko gry do pierwszej pomyłki.
+
+        :param size: Rozmiar strony kwadratu okienka.
+        :type size: int
+        :param users: lista użytkowników biorących udział w grze.
+        :type users: list[User]
+        """
         usernames = [user.username if user is not None else "Guest" for user in users]
         scores = [0] * len(usernames)
         active_users = [True] * len(usernames)
@@ -80,8 +91,8 @@ class MistakeGame:
             nonlocal gameEnded
             gameEnded = True
 
-            from DB.DAO import gameResultDao
-            from GUI.MainMenuWindow import MainMenuWindow
+            from src.DB.DAO import gameResultDao
+            from src.GUI.MainMenuWindow import MainMenuWindow
             dao = gameResultDao.GameResultDAO()
             for index,name in enumerate(usernames):
                    dao.create(name,"Mistake Game", 0, scores[index])

@@ -2,14 +2,29 @@
 import tkinter as tk
 from tkinter import simpledialog, messagebox
 
-from GUI.MistakeGame import MistakeGame
+from src.GUI.MistakeGame import MistakeGame
 
 
 class AuthorizePlayersWindow:
+    """
+    Okno GUI umożliwiające zalogowanie wielu graczy przed rozpoczęciem gry.
 
+    Każdy gracz może się zalogować lub gość jako grać. Po zatwierdzeniu użytkowników
+    uruchamiana jest gra z uwzględnieniem wszystkich zarejestrowanych graczy.
+    """
 
     @staticmethod
     def window_setup(window_size, main_user, player_amount):
+        """
+        Tworzy okno logowania graczy oraz przycisk do rozpoczęcia gry.
+
+        :param window_size: Rozmiar strony kwadratu okienka.
+        :type window_size: int
+        :param main_user: Obiekt użytkownika, który rozpoczął grę.
+        :type main_user: User
+        :param player_amount: Liczba graczy (łącznie z głównym użytkownikiem).
+        :type player_amount: int
+        """
         users = [main_user] + [None] * (player_amount - 1)
 
         size = window_size
@@ -35,7 +50,7 @@ class AuthorizePlayersWindow:
             password = simpledialog.askstring("Login", f"Enter your password for player {index}: ")
             if not login or not password:
                 return
-            from auth import registration
+            from src.auth import registration
             if registration.Person.login(login, password):
                 print("Successfully logged in")
                 user = registration.Person.get_user_by_login(login)

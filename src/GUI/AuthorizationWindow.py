@@ -1,14 +1,33 @@
 import tkinter as tk
 from tkinter import messagebox
 
-from GUI.GameTypeMenuWindow import GameTypeMenuWindow
-from auth import registration
-from utils.Properties import Properties
+from src.GUI.GameTypeMenuWindow import GameTypeMenuWindow
+from src.auth import registration
+
 
 class AuthorizationWindow:
+    """
+    Okno autoryzacji użytkownika w aplikacji edukacyjnej.
 
+    Umożliwia:
+    - rejestrację nowego użytkownika,
+    - logowanie istniejącego użytkownika,
+    - grę jako gość (bez konta),
+    - powrót do głównego menu.
+
+    Wszystkie metody są statyczne i bazują na interfejsie graficznym `tkinter`.
+    """
     @staticmethod
     def register(window_size):
+        """
+        Tworzy okno rejestracji nowego użytkownika.
+
+        Użytkownik wprowadza imię, login i hasło. Po udanej rejestracji
+        przekierowywany jest do wyboru typu gry.
+
+        :param window_size: Rozmiar strony kwadratu okienka.
+        :type window_size: int
+        """
         size = window_size
 
 
@@ -65,6 +84,15 @@ class AuthorizationWindow:
 
     @staticmethod
     def login(window_size):
+        """
+        Tworzy okno logowania użytkownika.
+
+        Wymaga podania poprawnego loginu i hasła.
+        Po zalogowaniu użytkownik przechodzi do wyboru typu gry.
+
+        :param window_size: Rozmiar strony kwadratu okienka.
+        :type window_size: int
+        """
         size = window_size
 
         window = tk.Tk()
@@ -121,10 +149,28 @@ class AuthorizationWindow:
 
     @staticmethod
     def guest(size):
+        """
+        Uruchamia grę bez logowania – użytkownik gra jako gość.
+
+        :param size: Rozmiar strony kwadratu okienka.
+        :type size: int
+        """
         GameTypeMenuWindow.window_setup(size, None)
 
     @staticmethod
     def windowSetup(window_size):
+        """
+        Główne okno wyboru metody autoryzacji.
+
+        Użytkownik może wybrać:
+        - Rejestrację
+        - Logowanie
+        - Grę jako gość
+        - Powrót do głównego menu
+
+        :param window_size: Rozmiar strony kwadratu okienka.
+        :type window_size: int
+        """
         size = window_size
 
         window = tk.Tk()
@@ -142,7 +188,7 @@ class AuthorizationWindow:
 
         def back():
             window.destroy()
-            from GUI.MainMenuWindow import MainMenuWindow
+            from src.GUI.MainMenuWindow import MainMenuWindow
             MainMenuWindow.mainMenu(size)
 
         registerButton = tk.Button(window, text="Register",command=lambda : (window.destroy(), AuthorizationWindow.register(size)), background="#C3C7F4", width=10, font=("Arial", 16), relief="groove")

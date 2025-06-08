@@ -1,7 +1,6 @@
 import bcrypt
 
-from DB import DAO
-from DB.DAO import userDao
+from src.DB.DAO import userDao
 
 
 class Person(object):
